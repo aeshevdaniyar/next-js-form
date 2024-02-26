@@ -6,12 +6,8 @@ import { useEffect } from "react"
 
 export const InitSDK = () => {
     useEffect(() => {
-     
-        
         (async () => {
             const sdk = await getUiSDK();  
-           
-             
             openModal(sdk)
         })();   
     },[])
